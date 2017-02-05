@@ -45,7 +45,7 @@ function onAppReady() {
     
     //$("#test").append("<li> ADDED ITEM</li>");
     
-//    alert("onAppReady!!!");
+    alert("onAppReady!!!");
     
     
 }
@@ -83,6 +83,8 @@ function updateList(){
 //    QueryOptions queryOptions = new QueryOptions();
 //    queryOptions.addSortByOption( "created ASC" );
 //    dataQuery.setQueryOptions( queryOptions );
+    
+    // example of retrieving first task
     var singleTask = Backendless.Persistence.of( Tasks ).findFirst();
     alert(singleTask.Task);
     
@@ -102,6 +104,7 @@ function updateList(){
   
     //alert("UPDATE");
 }
+
 
 
 
