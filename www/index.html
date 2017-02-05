@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+<head>
+    <title>Blank Cordova Mobile App Project Template (Lite)</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+    <!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <style>
+        /* following two viewport lines are equivalent to the meta viewport statement above, needed for Windows */
+        /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
+        @-ms-viewport { width: 100vw ; zoom: 100% ; }  @viewport { width: 100vw ; zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; }           @viewport { user-zoom: fixed ; }
+    </style>
+
+    <!-- backup CDN for JQuery + JQuery mobile -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    <!--  BACKENDLESS LIB  -->
+    <script src="js/backendless.min.js" type="text/javascript"></script>
+    
+    <script src="cordova.js"></script>          <!-- phantom library, needed for Cordova api calls, added during build -->
+    <script src="js/app.js"></script>           <!-- recommended location of your JavaScript code relative to other JS files -->
+    <script src="xdk/init-dev.js"></script>     <!-- normalizes device and document ready events, see README for details -->
+    
+    
+</head>
+
+<body>
+    
+    <div data-role="page" id="todoPage">
+
+        <div data-role="header" data-position="fixed">
+            <h1>ToDo List</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            
+            <h3>ToDo List</h3>
+            
+            <input type="text" name="textinput" id="addTaskText" value="" placeholder="New Task" />
+            <input type="button" id="addTaskButton" value="Add Task" />
+            <p></p>
+            
+            <ul data-role="listview" data-inset="true" id="taskList">
+                <li>First Task</li>
+                <li>Another Task</li>
+                <li><a href="#">Link example</a></li>
+            </ul>
+            
+            <input type="button" id="update" value="Update list" />
+
+	
+<!--  
+<form>
+    <input id="filter-for-listview" data-type="search" placeholder="Type to search...">
+</form>
+<ul data-role="listview" data-inset="true" data-filter="true" data-input="#filter-for-listview">
+    <li><a href="#">Acura</a></li>
+    <li><a href="#">Audi</a></li>
+    <li><a href="#">BMW</a></li>
+    <li><a href="#">Cadillac</a></li>
+    <li><a href="#">Ferrari</a></li>
+</ul>
+-->
+ 
+        <div id="test">
+            test div orig /n text  
+            <li> EMBEDED ITEM</li>
+            </div>       
+            
+            
+        </div><!-- /content -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>My Footer</h4>
+        </div><!-- /footer -->
+ 
+    </div><!-- /page -->
+    
+</body>
+</html>
